@@ -1,0 +1,11 @@
+[Unit]
+Description=BirdnetServer
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /home/pi/Documents/birdnet/main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

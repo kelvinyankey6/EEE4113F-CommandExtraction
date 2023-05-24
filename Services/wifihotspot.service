@@ -1,0 +1,12 @@
+[Unit]
+Description=WifiHotspot
+
+[Service]
+User=root
+ExecStart=/usr/bin/wifihotspot.sh
+Restart=always
+# Lot of stuff i forgot. Hopefully it works anyways
+
+
+[Install]
+WantedBy=multi-user.target
